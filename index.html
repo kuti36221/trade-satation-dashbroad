@@ -1,315 +1,325 @@
+Here is your HTML code translated into Spanish:
+
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>dashbroad</title>
- <style>
-  body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: blue;
-  padding: 10px 20px;
-}
-
-.logo {
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px;
-  transition: all 0.3s ease;
-}
-
-@media screen and (max-width: 768px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      background-color: blue;
-  }
-
-  .nav-links li {
-      text-align: center;
-      padding: 10px 0;
-      width: 100%;
-  }
-
-  .burger {
-      display: block;
-  }
-  
-  .nav-links.active {
+  <title>Panel de Control</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .navbar {
       display: flex;
-  }
-}
-.with {
-  color: blue;
-  background-color: white;
-  font-weight: bold;
-}
-.header {
-  font-size: 20px;
-  position: relative;
-  bottom: 11px;
-  color: white;
-  left: 10px;
-  font-weight: bold;
-}
-.up{
-  position: relative;
-  top: 10px;
-  left: 100px;
-  color: blue;
-  background-color: white;
-  height: 20px;
-  padding: 3px;
-  border-radius: 50px;
-  padding-left: 3px;
-  width: 90px;
-  text-align: center;
-}
-.main {
-  border: 2px solid ;
-  height: 1200px;
-  width: 409px;  
-  background-color: rgba(97, 97, 97, 0.486);
-}
-.testimony {
-  height: 60px;
-  margin-top: 50px;
-}
-.move {
-  font-size: 20px;
-  font-weight: bold;
-  color: green;
-  margin-left: 15px;
-  height: 50px;
-}
-.mainbalance {
-  border: 2px solid;
-  height: 40px;
-  background-color: white;
-  width: 160px;
-  margin-left: 12px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-  bottom: 30px;
-}
-.mmmb{
-  margin-left: 12px;
-  color: white;
-  font-size: 25px;
-}
-.amount {
-  font-size: 25px;
-  position: relative;
-  bottom: 19px;
-  left: 45px;
-}
-h5 {
-  font-size: 25px;
-  position: relative;
-  bottom: 148px;
-  left: 200px;
-  color: white;
-}
-.intbala{
-  border: 2px solid;
-  height: 40px;
-  background-color: white;
-  width: 160px;
-  margin-left: 207px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-  bottom: 185px;
-}
-.draw {
-  color: white;
-  position: relative;
-  right: 90px;
-  font-size: 27px;
-  bottom: 20px;
-  margin-right: 0px;
-}
-.Withdrawal {
-  border: 2px solid;
-  height: 40px;
-  background-color: white;
-  width: 160px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-  right: 90px;
-  bottom: 35px;
-}
-.Invest {
-  border: 2px solid;
-  height: 40px;
-  background-color: white;
-  width: 160px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-  right: 197px;
-  bottom: 45px;
-}
-.invest {
-  font-size: 25px;
-  position: relative;
-  color: white;
-  bottom: 30px;
-  right: 190px;
-}
-.Deposit {
-  border: 2px solid;
-  height: 40px;
-  background-color: white;
-  width: 160px;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
-  position: relative;
-  right: px;
-  bottom: 159px;
-}
-.deposit {
-  font-size: 25px;
-  position: relative;
-  color: white;
-  bottom: 142px;
-  right: px;
-  margin-left: 10px;
-}
-button {
-  position: relative;
-  left: 130px;
-  top: 60px;
-  font-size: 25px;
-  color: white;
-  background-color: blue;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 10px;
-}
- .trans {
-  margin-top: 100px;
- }
- .his {
-  position: relative;
-  bottom: 49px;
-  left: 260px;
- }
- .content {
-  position: relative;
-  bottom: 50px;
- }
- .dollar {
-  position: relative;
-  left: 300px;
-  bottom: 254px;
-  padding-bottom: 3px;
- }
- </style>
+      justify-content: space-between;
+      align-items: center;
+      background-color: blue;
+      padding: 10px 20px;
+    }
+    
+    .logo {
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-links li {
+      margin: 0 15px;
+    }
+    
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    
+    .burger {
+      display: none;
+      cursor: pointer;
+    }
+    
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+      transition: all 0.3s ease;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: blue;
+      }
+    
+      .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+      }
+    
+      .burger {
+        display: block;
+      }
+      
+      .nav-links.active {
+        display: flex;
+      }
+    }
+    
+    .with {
+      color: blue;
+      background-color: white;
+      font-weight: bold;
+    }
+    
+    .header {
+      font-size: 20px;
+      position: relative;
+      bottom: 11px;
+      color: white;
+      left: 10px;
+      font-weight: bold;
+    }
+    
+    .up {
+      position: relative;
+      top: 10px;
+      left: 100px;
+      color: blue;
+      background-color: white;
+      height: 20px;
+      padding: 3px;
+      border-radius: 50px;
+      padding-left: 3px;
+      width: 90px;
+      text-align: center;
+    }
+    
+    .main {
+      border: 2px solid;
+      height: 1200px;
+      width: 409px;  
+      background-color: rgba(97, 97, 97, 0.486);
+    }
+    
+    .testimony {
+      height: 60px;
+      margin-top: 50px;
+    }
+    
+    .move {
+      font-size: 20px;
+      font-weight: bold;
+      color: green;
+      margin-left: 15px;
+      height: 50px;
+    }
+    
+    .mainbalance {
+      border: 2px solid;
+      height: 40px;
+      background-color: white;
+      width: 160px;
+      margin-left: 12px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      bottom: 30px;
+    }
+    
+    .mmmb {
+      margin-left: 12px;
+      color: white;
+      font-size: 25px;
+    }
+    
+    .amount {
+      font-size: 25px;
+      position: relative;
+      bottom: 19px;
+      left: 45px;
+    }
+    
+    h5 {
+      font-size: 25px;
+      position: relative;
+      bottom: 148px;
+      left: 200px;
+      color: white;
+    }
+    
+    .intbala {
+      border: 2px solid;
+      height: 40px;
+      background-color: white;
+      width: 160px;
+      margin-left: 207px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      bottom: 185px;
+    }
+    
+    .draw {
+      color: white;
+      position: relative;
+      right: 90px;
+      font-size: 27px;
+      bottom: 20px;
+    }
+    
+    .Withdrawal {
+      border: 2px solid;
+      height: 40px;
+      background-color: white;
+      width: 160px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      right: 90px;
+      bottom: 35px;
+    }
+    
+    .Invest {
+      border: 2px solid;
+      height: 40px;
+      background-color: white;
+      width: 160px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      right: 197px;
+      bottom: 45px;
+    }
+    
+    .invest {
+      font-size: 25px;
+      position: relative;
+      color: white;
+      bottom: 30px;
+      right: 190px;
+    }
+    
+    .Deposit {
+      border: 2px solid;
+      height: 40px;
+      background-color: white;
+      width: 160px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 10px;
+      position: relative;
+      right: px;
+      bottom: 159px;
+    }
+    
+    .deposit {
+      font-size: 25px;
+      position: relative;
+      color: white;
+      bottom: 142px;
+      right: px;
+      margin-left: 10px;
+    }
+    
+    button {
+      position: relative;
+      left: 130px;
+      top: 60px;
+      font-size: 25px;
+      color: white;
+      background-color: blue;
+      padding: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 10px;
+    }
+    
+    .trans {
+      margin-top: 100px;
+    }
+    
+    .his {
+      position: relative;
+      bottom: 49px;
+      left: 260px;
+    }
+    
+    .content {
+      position: relative;
+      bottom: 50px;
+    }
+    
+    .dollar {
+      position: relative;
+      left: 300px;
+      bottom: 254px;
+      padding-bottom: 3px;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">@Trade-Station</div>
     <ul class="nav-links" id="nav-links">
-        <li><a href="http://t.me/George_Soros36">Invest</a></li>
-        <li><a href="https://trade-station-withdrawal.vercel.app">Withdrawal</a></li>
+      <li><a href="http://t.me/George_Soros36">Invertir</a></li>
+      <li><a href="https://trade-station-withdrawal.vercel.app">Retiro</a></li>
     </ul>
     <div class="burger" id="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
-</nav>
-   <div class="main">
-      <div class="testimony">
-        <marquee behavior="" direction="down" class="move">Earn with us, Trade with us, Profit with us <br>,,,,,,,,,, make $1800 in a day with us </marquee>
-      </div>
-      <h4 class="mmmb">Main Balance</h4>
-      <div class="mainbalance">
-        <h3 class="amount"> $300.00</h3>
-      </div>
-      <H5>Interest Balance</H5>
-      <div class="intbala">
+  </nav>
+  <div class="main">
+    <div class="testimony">
+      <marquee behavior="" direction="down" class="move">Gane con nosotros, Negocie con nosotros, Benefíciese con nosotros <br>,,,,,,,,,, gane $1800 en un día con nosotros </marquee>
+    </div>
+    <h4 class="mmmb">Saldo Principal</h4>
+    <div class="mainbalance">
+      <h3 class="amount"> $300.00</h3>
+    </div>
+    <H5>Saldo de Interés</H5>
+    <div class="intbala">
+      <h3 class="amount">$0.00</h3>
+      <h2 class="draw">Retiro </h3>
+      <div class="Withdrawal">
         <h3 class="amount">$0.00</h3>
-        <h2 class="draw">Withdrawal </h3>
-          <div class="Withdrawal">
-            <h3 class="amount">$0.00</h3>
-          </div>
-          <h2 class="invest">Investment </h3>
-            <div class="Invest">
-              <h3 class="amount">$0.00</h3>
-            </div>
-            <h2 class="deposit">Deposit </h3>
-              <div class="Deposit">
-                <h3 class="amount">$0.00</h3>
-              </div>
       </div>
-      <button onclick="myfunction()">Withdraw</button>
-      
-      <h2 class="trans">TRANSATION</h2>
-      <h2 class="his">HISTORY</h2>
-      <h3 class="content"> Give-Away Price Given </h3>
-      <h3 class="content">Withdraw Give-Away </h3>
-      <h3 class="content">Total withdrawal</h3>
-      <h3 class="content">Total Deposit</h3>
-      <h3 class="content">Total Investment</h3>
-      <h4 class="dollar">$300.00</h4>
-      <h4 class="dollar">$0.00</h4>
-      <h4 class="dollar">$0.00</h4>
-      <h4 class="dollar">$0.00</h4>
-      <h4 class="dollar">$0.00</h4>
-      
-   </div>
-   <script>
-     function myfunction () {
-      window.location.href="https://trade-station-withdrawal.vercel.app/"
-    }
-   </script>
-   <script>document.getElementById('burger').addEventListener('click', function() {
-    document.getElementById('nav-links').classList.toggle('active');
-  });</script>
-</body>
-</html>
+      <h2 class="invest">Inversión </h3>
+      <div class="Invest">
+        <h3 class="amount">$0.00</h3>
+      </div>
+      <h2 class="deposit">Depósito </h3>
+      <div class="Deposit">
+        <h3 class="amount">$0.00</h3>
+      </div>
+    </div>
+    <button onclick="myfunction()">Retirar</button>
+
+    <h2 class="trans">TRANSACCIONES</h2>
+    <h2 class="his">HISTORIAL</h2>
+    <h3 class="content">Precio de Regalo Dado</h3>
+    <h3 class="content">Retiro de Regalo</h3>
+    <h3 class="content">Total Retiros</h3>
+    <h3 class="content">Total Depósitos</h3>
+    <h3 class="content">Total Inversiones</h3>
+    <h4 class="dollar">$300.00</h4>
+    <h4 class="dollar">$0.00</h4>
+    <h4 class="dollar">$0.00</h4
